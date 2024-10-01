@@ -1,0 +1,856 @@
+.hero-section {
+  background: #72cafd;
+  padding-top: 80px;
+  position: relative;
+}
+.hero-wrapper {
+  max-width: 1500px;
+  margin: 0 auto;
+  position: relative;
+}
+.hero-content {
+  max-width: 639px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 9;
+}
+.hero-section p {
+  max-width: 462px;
+  margin: 20px auto 30px;
+}
+.hero-content img {
+  margin-top: 45px;
+}
+.cloud-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.hero-content h4 {
+  font-size: 30px;
+}
+.cloud-wrapper > div {
+  position: absolute;
+}
+.big-cloud-right {
+  bottom: 0;
+  right: -400px;
+  transform: rotateY(180deg);
+  z-index: 1;
+}
+.barney-img {
+  bottom: 50px;
+  right: 125px;
+}
+.trump-img {
+  left: 100px;
+  bottom: 40px;
+}
+.big-cloud {
+  bottom: 0;
+  left: -400px;
+  z-index: 1;
+}
+.small-cloud {
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: -220px;
+  left: 50px;
+  animation: movingLeftRight 3s linear infinite;
+  animation-delay: 1s;
+}
+.medium-cloud {
+  left: 50%;
+  transform: translateX(-50%);
+  top: -50px;
+  animation: movingTopBottom 3s linear infinite;
+}
+.medium-cloud-right {
+  right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-top: -180px;
+  animation: movingLeftRight 3s linear infinite;
+}
+@keyframes movingLeftRight {
+  0% {
+    transform: translate(0px, -50%);
+  }
+  50% {
+    transform: translate(20px, -50%);
+  }
+  100% {
+    transform: translate(0px, -50%);
+  }
+}
+@keyframes movingTopBottom {
+  0% {
+    transform: translate(-50%, 0px);
+  }
+  50% {
+    transform: translate(-50%, 5px);
+  }
+  100% {
+    transform: translate(-50%, 0px);
+  }
+}
+/* info section */
+#info_section {
+  background: #72cafd;
+  padding: 77px 0 160px;
+  position: relative;
+}
+#info_section::before {
+  content: "";
+  position: absolute;
+  background: url(./Assets/cloud-294.png);
+  width: 294px;
+  height: 98px;
+  bottom: 20px;
+  left: -10px;
+  animation: moving 3s linear infinite;
+  animation-delay: 1.5s;
+}
+@keyframes moving {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+#info_section::after {
+  content: "";
+  position: absolute;
+  background: url(./Assets/cloud-347.png);
+  width: 348px;
+  height: 97px;
+  bottom: 20px;
+  right: 0px;
+  animation: moving 3s linear infinite;
+  animation-delay: 2s;
+}
+.tokens-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  gap: 18px;
+}
+/* tokenomics */
+#tokenomics {
+  background: #72cafd;
+  padding-bottom: 90px;
+  position: relative;
+}
+#tokenomics::before {
+  content: "";
+  position: absolute;
+  background: url(./Assets/tokenomics-cloud.png);
+  left: 0;
+  bottom: -150px;
+  width: 399px;
+  height: 210px;
+  animation: movingUpDown 3s linear infinite;
+  z-index: 3;
+}
+@keyframes movingUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+.tokenomics-heading {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.tokenomics-heading h2 {
+  margin-bottom: 0;
+}
+.tokenomics-content-col > p {
+  max-width: 470px;
+  margin: 35px 0 50px;
+}
+.chart-info-single {
+  max-width: 490px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 23px;
+}
+.chart-info-single__circle {
+  flex-basis: 36px;
+  max-width: 36px;
+  height: 36px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+}
+.chart-info-single__content {
+  flex: 1;
+  padding-left: 22px;
+}
+.chart-info-single__content p {
+  margin-bottom: 0;
+}
+.chart-info-single:first-of-type .chart-info-single__circle {
+  background: #fbdb46;
+}
+.chart-info-single:nth-child(2) .chart-info-single__circle {
+  background: #feb195;
+}
+.chart-info-single:nth-child(3) .chart-info-single__circle {
+  background: #feb85b;
+}
+.chart-info-single:nth-child(4) .chart-info-single__circle {
+  background: #a6b36d;
+}
+.chart-info-single:nth-child(5) .chart-info-single__circle {
+  background: #3eabee;
+}
+.tokenomics-chart {
+  position: relative;
+}
+.tokenomics-chart::before {
+  position: absolute;
+  content: "";
+  background: url(./Assets/cloud-294.png);
+  width: 294px;
+  height: 98px;
+  bottom: 0;
+  right: -150px;
+  animation: moving 3s linear infinite;
+  animation-delay: 0.5s;
+}
+.tokenomics-chart::after {
+  position: absolute;
+  content: "";
+  background: url(./Assets/cloud-294.png);
+  width: 347px;
+  height: 98px;
+  top: 70px;
+  left: -80px;
+  animation: moving 3s linear infinite;
+}
+.tokenomics-chart img {
+  position: relative;
+  z-index: 1;
+}
+#house_tokenomics {
+  background-color: #72cafd;
+  position: relative;
+}
+#house_tokenomics::before {
+  content: "";
+  position: absolute;
+  background: url(./Assets/cloud-347.png);
+  width: 347px;
+  height: 97px;
+  animation: moving 3s linear infinite;
+  left: 40%;
+}
+#house_tokenomics::after {
+  content: "";
+  position: absolute;
+  background: url(./Assets/cloud-247.svg);
+  width: 247px;
+  height: 100px;
+  animation: moving 3s linear infinite;
+  right: 10%;
+  top: 10%;
+  animation-delay: 1s;
+}
+/* how to buy */
+#how_to_buy {
+  padding: 130px 0 111px;
+  border-bottom: 1px solid #cfba9c;
+}
+.buy-content p {
+  margin-top: 25px;
+}
+.buy-single {
+  border: 1px solid #cfba9c;
+  border-radius: 10px;
+  height: 100%;
+  padding: 40px 30px;
+}
+.buy-single__number {
+  border: 1px solid #cfba9c;
+  background: #e8d3b6;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  font-weight: 600;
+}
+.buy-single h4 {
+  margin: 30px 0 20px;
+}
+.buy-single p {
+  margin-bottom: 0;
+}
+/* roadmap */
+#roadmap {
+  padding: 82px 0 80px;
+}
+#roadmap .container {
+  max-width: 1110px;
+}
+#roadmap .section-heading {
+  max-width: 656px;
+  margin: 0 auto 80px;
+}
+#roadmap .section-heading p {
+  margin-top: 35px;
+}
+.roadmap-single {
+  background: #e8d3b6;
+  border-radius: 10px;
+  padding: 40px 32px;
+  margin-bottom: 60px;
+  min-height: 317px;
+  position: relative;
+  z-index: 9;
+}
+.roadmap-single ul {
+  padding-left: 0;
+  margin-top: 23px;
+  margin-bottom: 0;
+}
+.roadmap-single ul li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.roadmap-single ul li:last-of-type {
+  margin-bottom: 0;
+}
+.roadmap-single h5 {
+  margin-bottom: 12px;
+}
+#roadmap .row:last-of-type {
+  position: relative;
+}
+#roadmap .row:last-of-type::before {
+  content: "";
+  position: absolute;
+  background: url(./Assets/line-roadmap.png);
+  width: 632px;
+  height: 572px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: -30px;
+  margin-left: 70px;
+}
+/* mission */
+#mission {
+  padding-bottom: 150px;
+}
+.mision-col {
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.mision-col p {
+  margin: 30px 0 40px;
+  line-height: 2;
+}
+/* lottery */
+#lottery .container {
+  max-width: 1400px;
+  position: relative;
+}
+.lottery-img {
+  transform: rotate(-5deg);
+}
+#lottery .row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.lottery-content {
+  padding-top: 150px;
+  padding-left: 150px;
+}
+.lottery-content h4 {
+  font-size: 36px;
+}
+.lottery-content h2 {
+  font-size: 90px;
+}
+.buy-ticket {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+.buy-ticket h5 {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.next-draw {
+  margin-top: 78px;
+}
+.next-draw p {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.draw-countdown span {
+  font-size: 36px;
+  font-weight: 600;
+}
+.draw-countdown div {
+  display: flex;
+  gap: 25px;
+}
+/* faq */
+#faq {
+  margin-top: 150px;
+}
+.faq-parent {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffc142;
+  border-radius: 127px;
+  border: 1px solid #000000;
+  padding: 390px 48px 95px 95px;
+  position: relative;
+  background-image: url(./Assets/faq-background.png);
+  background-position: top center;
+}
+.faq-parent::before {
+  content: "";
+  background: url(./Assets/cloud-img.svg);
+  position: absolute;
+  width: 1383px;
+  height: 672px;
+  background-size: 100% 100%;
+  top: -320px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: -10px;
+}
+.faq-parent h2 {
+  font-size: 69px;
+  line-height: 1.2;
+}
+.accordion-item {
+  margin-bottom: 18px;
+  border: none;
+}
+.accordion-item button {
+  background: transparent !important;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 28px;
+  box-shadow: none !important;
+  color: #000 !important;
+}
+.accordion-item button:focus {
+  outline: none;
+  box-shadow: none;
+}
+.accordion .accordion-item {
+  border-radius: 20px;
+  background: #fff5e7;
+}
+.accordion-item button {
+}
+.accordion-body {
+  font-size: 14px;
+  padding: 0 28px 30px;
+}
+@media (max-width: 1440px) {
+  .faq-parent::before {
+    width: 96.04vw;
+    height: 46.6vw;
+    top: -20%;
+  }
+}
+@media (max-width: 1300px) {
+  .big-cloud img,
+  .big-cloud-right img {
+    width: 700px;
+  }
+  .big-cloud-right {
+    right: -200px;
+  }
+  .big-cloud {
+    left: -200px;
+  }
+  .barney-img img {
+    width: 300px;
+  }
+  .trump-img img {
+    width: 270px;
+  }
+  .lottery-content h2 {
+    font-size: 62px;
+  }
+  .lottery-content h3 {
+    font-size: 28px;
+  }
+  .next-draw {
+    margin-top: 50px;
+  }
+}
+@media (max-width: 1200px) {
+  .barney-img {
+    right: 60px;
+  }
+  .trump-img {
+    left: 50px;
+  }
+  .lottery-content {
+    padding-top: 100px;
+    padding-left: 120px;
+  }
+  .faq-parent::before {
+    width: 96.04vw;
+    height: 46.6vw;
+    top: -12%;
+  }
+  .faq-parent {
+    padding: 390px 40px 70px;
+  }
+}
+@media (max-width: 1024px) {
+  .hero-section {
+    padding-top: 25px;
+  }
+  .big-cloud img,
+  .big-cloud-right img {
+    width: 500px;
+  }
+  .trump-img img {
+    width: 200px;
+  }
+  .barney-img img {
+    width: 180px;
+  }
+  .medium-cloud-right img {
+    width: 150px;
+  }
+  .medium-cloud img {
+    width: 250px;
+  }
+  .small-cloud img {
+    width: 180px;
+  }
+  .medium-cloud-right {
+    margin-top: 0;
+  }
+  .small-cloud {
+    margin-top: -50px;
+  }
+  .tokens-wrapper {
+    justify-content: center;
+    margin-top: 10px;
+  }
+  #house_tokenomics::before {
+    display: none;
+  }
+  #house_tokenomics::after {
+    top: -50px;
+  }
+  #tokenomics::before {
+    bottom: -100px;
+  }
+  #how_to_buy {
+    padding: 100px 0;
+  }
+  #how_to_buy .col-12 {
+    margin-bottom: 20px;
+  }
+  #roadmap {
+    padding: 80px 0 100px;
+  }
+  .lottery-wrapper,
+  #lottery .container {
+    max-width: 750px !important;
+    margin: 0 auto;
+  }
+  .lottery-content h3 {
+    font-size: 20px;
+  }
+  .lottery-content h2 {
+    font-size: 36px;
+  }
+  .lottery-content a span {
+    width: 200px;
+    height: 45px;
+  }
+  .lottery-content {
+    padding-top: 60px;
+    padding-left: 80px;
+  }
+  .next-draw p {
+    font-size: 16px;
+  }
+  .draw-countdown span {
+    font-size: 26px;
+  }
+  .buy-ticket h5 {
+    font-size: 16px;
+  }
+  .faq-parent {
+    padding: 250px 40px 70px;
+  }
+  .faq-parent h2 {
+    font-size: 42px;
+  }
+  .accordion-item button {
+    padding: 20px;
+  }
+  .accordion-body {
+    padding: 0 20px 30px;
+  }
+  .main-nav__items .btn-wrapper {
+    display: block !important;
+  }
+}
+@media (max-width: 767px) {
+  .hero-wrapper {
+    padding-bottom: 365px;
+  }
+  .hero-content img {
+    display: none;
+  }
+  .hero-content h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .medium-cloud {
+    top: -36px;
+  }
+  .big-cloud-right {
+    display: none;
+  }
+  .big-cloud {
+    left: -240px;
+  }
+  .big-cloud img {
+    width: 650px;
+  }
+  .barney-img {
+    right: 5px;
+    bottom: 28px;
+  }
+  .trump-img {
+    left: 10px;
+  }
+  .trump-img {
+    bottom: 20px;
+  }
+  .medium-cloud-right {
+    margin-top: 110px;
+    right: -50px;
+  }
+  .medium-cloud-right img {
+    width: 200px;
+  }
+  .small-cloud {
+    margin-top: 50px;
+    left: -50px;
+  }
+  #info_section {
+    padding: 50px 0 196px;
+  }
+  .info-single {
+    text-align: center;
+    margin-bottom: 35px;
+  }
+  .tokens-wrapper {
+    margin-top: 0;
+  }
+  .token-single img {
+    width: 53px;
+  }
+  .tokens-wrapper {
+    gap: 15px;
+  }
+  #info_section::after {
+    right: auto;
+    left: -120px;
+    width: 302px;
+    height: 84px;
+    background-size: 100%;
+    bottom: 50px;
+  }
+  .tokenomics-heading {
+    gap: 10px;
+  }
+  .tokenomics-heading img {
+    width: 43px;
+  }
+  .tokenomics-content-col > p {
+    max-width: 304px;
+    margin: 25px auto 40px;
+    text-align: center;
+  }
+  #info_section::before {
+    width: 200px;
+    height: 55px;
+    background-size: 100% 100%;
+    bottom: -200px;
+    left: auto;
+    right: -100px;
+  }
+  .tokenomics-chart {
+    margin-top: 40px;
+  }
+  .tokenomics-chart::after {
+    top: 20px;
+  }
+  #tokenomics::before {
+    background-size: 35% auto;
+    bottom: -50px;
+    background-position: center left;
+    background-repeat: no-repeat;
+  }
+  #house_tokenomics::after {
+    background-size: 40% auto;
+    background-repeat: no-repeat;
+    right: 70px;
+    background-position: right center;
+  }
+  #how_to_buy {
+    padding: 80px 0 40px;
+  }
+  #how_to_buy .row:first-of-type {
+    flex-direction: column-reverse;
+    margin-bottom: 20px !important;
+  }
+  .buy-content {
+    text-align: center;
+  }
+  .buy-content p {
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 0;
+  }
+  .buy-single h4 {
+    margin: 25px 0 15px;
+  }
+  #roadmap {
+    padding: 50px 0 40px;
+  }
+  #roadmap .section-heading p {
+    margin-top: 20px;
+  }
+  #roadmap .section-heading {
+    margin: 0 auto 40px;
+  }
+  .roadmap-single {
+    margin-bottom: 30px;
+  }
+  .roadmap-single {
+    min-height: auto;
+  }
+  .roadmap-single ul li {
+    font-size: 14px;
+  }
+  .roadmap-beer {
+    transform: rotate(-15deg);
+    margin-bottom: 40px;
+  }
+  .roadmap-beer img {
+    width: 124px;
+  }
+  #roadmap .row:last-of-type::before {
+    background: url(./Assets/line-mobile.svg);
+    width: 175px;
+    height: 1123px;
+    margin-left: 50px;
+    margin-top: 0;
+  }
+  #mission {
+    padding-bottom: 65px;
+  }
+  .mision-col p {
+    margin: 20px 0 30px;
+  }
+  .lottery-wrapper .lottery-img {
+    width: 422px;
+    margin-left: -34px;
+  }
+  .lottery-content h3 {
+    font-size: 12px;
+  }
+  .lottery-content {
+    padding: 40px;
+    padding-left: 20px;
+  }
+  .lottery-content h2 {
+    font-size: 26px;
+  }
+  .buy-ticket a span {
+    width: 96px;
+    height: 28px;
+    font-size: 10px;
+    border-radius: 3px;
+    border-width: 1px;
+  }
+  .buy-ticket a::before {
+    border-width: 1px;
+    border-radius: 3px;
+    transform: translateY(5px);
+  }
+  .buy-ticket h5 {
+    font-size: 10px;
+  }
+  .buy-ticket {
+    gap: 10px;
+  }
+  .next-draw {
+    margin-top: 15px;
+  }
+  .next-draw p {
+    font-size: 8px;
+  }
+  .draw-countdown span {
+    font-size: 14px;
+  }
+  .draw-countdown div {
+    gap: 10px;
+  }
+  #faq {
+    margin-top: 50px;
+  }
+  .faq-parent {
+    padding: 121px 20px 40px;
+    border-radius: 30px;
+  }
+  .faq-parent::before {
+    top: -7%;
+    margin-left: 0;
+  }
+  .faq-parent h2 {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .accordion .accordion-item {
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  .accordion-item button {
+    font-size: 16px;
+  }
+  .accordion-header {
+    margin-bottom: 0 !important;
+  }
+}
